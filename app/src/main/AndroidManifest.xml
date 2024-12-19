@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BelajarKotlin1"
+        tools:targetApi="33">
+
+        <activity
+            android:name=".jobsheet11webservice.activity.UserActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet11webservice.activity.PostActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet11webservice.activity.JsonActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet10SharedPreferences.SharedActivity"
+            android:theme="@style/Theme.Design.Light" />
+
+        <service android:name=".jobsheet9notificaton.NotificationService" />
+
+        <receiver android:name=".jobsheet9notificaton.AlarmReceiver" />
+
+        <activity
+            android:name=".jobsheet9notificaton.NotificationActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet8view.UserAdapter"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet8view.SearchView"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet8view.MenuView"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet8view.TabHost"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet7adepter.RecycleActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet5dialog.HelpActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet5dialog.LatihanDialogActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet5dialog.DialogActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet4layout.LatihanlayoutActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet4layout.Constraintlayout"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet4layout.LayoutActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet4layout.LinearlayoutActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".jobsheet4layout.RelativelayoutActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".Pertemuan4Activity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".InfoFragment"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".HomeFragment"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".ProfileFragment"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".SecondActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".ResultExplicitActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".IntentActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".ImplicitActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".FragmentActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".ExplicitActivity"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BelajarKotlin1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
